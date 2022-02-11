@@ -5,8 +5,12 @@
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
+  grid-column-gap: 20px;
   grid-template-columns: auto auto auto auto;
-  background-color: #2196f3;
   padding: 10px 0px;
+}
+
+.img-format {
+  height: 100%;
+  width: 100%;
 }

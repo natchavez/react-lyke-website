@@ -1,29 +1,71 @@
 import React from 'react';
 import classes from './Products.module.css';
 import ProductFilter from './ProductFilter';
-// import background from '../../assets/caps/1.jpg';
+import cap1 from './caps/1.jpg';
+import cap2 from './caps/2.jpg';
+import cap3 from './caps/3.jpg';
+import cap4 from './caps/4.jpg';
+import cap5 from './caps/5.jpg';
+import cap6 from './caps/6.jpg';
+import cap7 from './caps/7.jpg';
+import cap8 from './caps/8.jpg';
+
 const PRODUCTS = [
   {
     id: 'c1',
     capName: 'Cap 1',
     description: 'High Quality Cap Tat are designed for you',
     price: 200.0,
-    imageSrc:
-      'https://image.shutterstock.com/image-photo/baseball-cap-isolated-on-white-260nw-700804645.jpg',
+    imageSrc: cap1,
   },
   {
     id: 'c2',
     capName: 'Cap 1',
     description: 'High Quality Cap Tat are designed for you',
     price: 200.0,
-    imageSrc: './../caps/1.jpg',
+    imageSrc: cap2,
   },
   {
     id: 'c3',
     capName: 'Cap 1',
     description: 'High Quality Cap Tat are designed for you',
     price: 200.0,
-    imageSrc: '../src/assets/caps/3.jpg',
+    imageSrc: cap3,
+  },
+  {
+    id: 'c3',
+    capName: 'Cap 1',
+    description: 'High Quality Cap Tat are designed for you',
+    price: 200.0,
+    imageSrc: cap4,
+  },
+  {
+    id: 'c3',
+    capName: 'Cap 1',
+    description: 'High Quality Cap Tat are designed for you',
+    price: 200.0,
+    imageSrc: cap5,
+  },
+  {
+    id: 'c3',
+    capName: 'Cap 1',
+    description: 'High Quality Cap Tat are designed for you',
+    price: 200.0,
+    imageSrc: cap6,
+  },
+  {
+    id: 'c3',
+    capName: 'Cap 1',
+    description: 'High Quality Cap Tat are designed for you',
+    price: 200.0,
+    imageSrc: cap7,
+  },
+  {
+    id: 'c3',
+    capName: 'Cap 1',
+    description: 'High Quality Cap Tat are designed for you',
+    price: 200.0,
+    imageSrc: cap8,
   },
 ];
 const Products = () => {
@@ -34,7 +76,7 @@ const Products = () => {
 
       <div className={classes['grid-container']}>
         {PRODUCTS.map((product) => (
-          <img src={product.imageSrc}></img>
+          <img className={classes['img-format']} src={product.imageSrc}></img>
         ))}
       </div>
     </div>
